@@ -12,18 +12,27 @@ In Tuesdays initial session, the group joined together and discussed our subject
 
 Subject
 
-Through Kaggle we found a lot of very interesting datasets regarding the Covid Pandemic. We deliberated about what angle to take to best fit this project and looked at several different ideas. We settled on vaccination statistics as our base.
+Through Kaggle we found a lot of very interesting datasets regarding the Covid Pandemic. We deliberated about what angle to take to best fit this project and looked at several different ideas. We settled on vaccination statistics as our base, looking to assess hwo selected developed nations embraced the concept of the Covid-19 vaccine. We had a particular interest in how fast and early these vaccines were delivered and believed that we could achieve this using the Extract, Transform and Load concept.
 
-We then developed our idea of what we wanted the project to look like and how we could individually contribute. We decided that the best way was for us to look at a dataset each that we could clean and trim to fit together in one collective dataset.
+We then developed our idea of what we wanted the project to look like and how we could individually contribute. We decided that the best way was for us to look at a dataset each, extract the relevent data, transform our findings and load them into a collective database.
 
 Delegation of tasks across the group
 
 We chose to divide our datasets geographically. We sourced through Kaggle some comparible datasets regarding daily vaccination figures across four separate countries;
 
--USA - Jesse's dataset
--UK - Serdar's dataset
--Canada - Maxwell's dataset
--Italy - Sam's dataset
+-USA - Jesse's dataset - https://www.kaggle.com/paultimothymooney/usa-covid19-vaccinations
+-UK - Serdar's dataset - https://www.kaggle.com/rajkumarl/uk-covid-vaccination
+-Canada - Maxwell's dataset - https://www.kaggle.com/tenzinmigmar/covid19-vaccine-tracking-in-canada
+-Italy - Sam's dataset - https://www.kaggle.com/arthurio/italian-vaccination
+
+A resource folder was created from which the data is uploaded into a Pandas DataFrame 
+Canada_df
+Usa_df
+Italy_df
+uk_df
+The following dependencies were imported:
+Pandas
+PostgreSQL
 
 We decided that we would look to tie all of these datasets together based on;
 
@@ -31,7 +40,17 @@ We decided that we would look to tie all of these datasets together based on;
 -Daily Vaccination Count
 -Cumulative Vaccination Count
 
-The plan then was to then combine the cleansed datasets and load them through SQL as a database.
+Why we chose these datasets
+
+We chose these datasets for several purposes. The UK and Canada have been reported through international media as having some of the most successful vaccination rollout programs on the planet, so we felt that we would likely see the highest functioning trends from these. 
+
+We then felt that the USA was also a good dataset to include as it is a country that is commonly accepted as being the leading nation in the world. It is understood that the rollout there has faced some difficult challenges amid lots of other internal and foreign affairs during the pandemic, so we expected to see results that were more of a median. 
+
+Finally, Italy was chosen as we felt that the general perception is that, whilst a very affluent country it would likely lag behind the other three, due to differences in healthcare budgets and because of its inclusion in the European Union where their research and resources would be spread across nations other than its own. (Italy was also chosen partly because Sam was on vacation in Italy during this project week, so adding a bit of personal interest and excitement to the work!)
+
+Merge
+
+Our plan then was to then merge the cleansed datasets and then load them through SQL as a database.
 
 PROJECT REPORT
 
