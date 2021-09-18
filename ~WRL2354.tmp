@@ -6,7 +6,7 @@ Extract
 Transform
 Load
 Data Extraction
-As a result of this work, we access four different sets of data from kaggle.com on vaccinations from the USA, Canada, Italy and Canada.
+As a result of this work, We access four different sets of data from kaggle.com on vaccinations from the USA, Canada, Italy and Canada.
 https://www.kaggle.com/tenzinmigmar/covid19-vaccine-tracking-in-canada
 https://www.kaggle.com/paultimothymooney/usa-covid19-vaccinations
 https://www.kaggle.com/rajkumarl/uk-covid-vaccination
@@ -20,9 +20,7 @@ The following dependencies were imported:
 Pandas
 PostgreSQL
 Data Transformation
-Maxwell
-The data obtained for Canada was fairly simple as most of the data was clear and detailed. For this reason, the first step in cleaning the data
-Was to rename some columns and dropping irrelevant columns and saving into a new DataFrame. It was observed that names for province’s were not given but decided to leave it in the DataFrame as a point of reference. In addition the data revealed that vaccines were distributed to provinces way before actual vaccinations started and so I dropped all zero entries on relevant columns in order to get the starting date for all vaccinations. As a final outlook a dropna function was applied on the total vaccinations column to be sure we have none value entries in the final dataset. 
+Data Loading
 
 Maxwell Ansah  11:49 AM
 Conclusion
