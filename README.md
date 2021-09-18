@@ -25,9 +25,13 @@ We decided that we would look to tie all of these datasets together based on;
 The work load was shared in the following way:
 
 Extracting data - Sam, Max
+
 Transformation of data - Sam, Max, Jesse, Serdar
+
 Loading data - Serdar, Jesse
+
 Project Proposal - Sam
+
 Project Report - Jesse, Max, Serdar
 
 
@@ -46,7 +50,9 @@ Coronavirus is a disease that affects the respiratory system at large; due to it
 This is achieved by applying the ETL data modelling concept:
 
 Extract
+
 Transform
+
 Load
 
 ### Data Extraction
@@ -54,21 +60,19 @@ Load
 As a result of this work, We access four different sets of data from kaggle.com on vaccinations from the USA, Canada, Italy and Canada. (Jesse - USA, Serdar - UK, Max - Canada, Sam - Italy)
 
 https://www.kaggle.com/tenzinmigmar/covid19-vaccine-tracking-in-canada
+
 https://www.kaggle.com/paultimothymooney/usa-covid19-vaccinations
+
 https://www.kaggle.com/rajkumarl/uk-covid-vaccination
+
 https://www.kaggle.com/arthurio/italian-vaccination
 
 A resource folder was created from which the data is uploaded into a Pandas DataFrame: 
 
-ca_vacc_df
-us_vacc_df
-it_vacc_df
-uk_vacc_df
+ca_vacc_df, us_vacc_df, it_vacc_df, uk_vacc_df
 
 The following dependencies were imported for this project:
-pandas
-sqlalchemy
-functools
+pandas, sqlalchemy, functools, matplotlib
 
 ### Data Transformation
 
