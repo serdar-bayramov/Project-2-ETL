@@ -1,6 +1,6 @@
 # Project-2-ETL
 
-## Title: ETL data modelling for vaccination roll-out in the first 6 months in USA, UK, Canada and Italy
+### Title: ETL data modelling for vaccination roll-out in the first 6 months in USA, UK, Canada and Italy
 
 ## PROJECT PROPOSAL
 
@@ -59,6 +59,7 @@ https://www.kaggle.com/rajkumarl/uk-covid-vaccination
 https://www.kaggle.com/arthurio/italian-vaccination
 
 A resource folder was created from which the data is uploaded into a Pandas DataFrame: 
+
 ca_vacc_df
 us_vacc_df
 it_vacc_df
