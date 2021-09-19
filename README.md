@@ -84,11 +84,11 @@ The UK dataset was not very complicated to overcome. There were originally some 
 
 ### USA data transformation
 
-Select and rename the columns that we are interested in and drop all None values from the dataset. Select only the locations that is 'United States' which is the sum of all states. Extract only the first 180 days from the entire dataset.
+First we explored the "locations" within the dataset to identify at which level the data was grouped. We noticed that each State had its own daily record, but we also had a national "United States" entry which we could you for our analysis without grouping all States. We filteres the dataframe to just the "United States" location and also dropped all irrelevent columns and renamed the columns we were keeping to keep consistent across the different datasets. We reset the index in order to compare the datasets by "count of dats into the vaccination roll out" and then filtered to just the first 180 days for comparison.
 
 ### Canada data transformation
 
-The data obtained for Canada was fairly simple as most of the data was clear and detailed. For this reason, the first step in cleaning the data was to rename some columns and dropping irrelevant columns and saving into a new DataFrame. It was observed that names for province’s were not given but decided to leave it in the DataFrame as a point of reference. In addition the data revealed that vaccines were distributed to provinces way before actual vaccinations started and so I dropped all zero entries on relevant columns in order to get the starting date for all vaccinations. As a final outlook a dropna function was applied on the total vaccinations column to be sure we have none value entries in the final dataset.
+The data obtained for Canada was fairly simple as most of the data was clear and detailed. For this reason, the first step in cleaning the data was to rename some columns and dropping irrelevant columns and saving into a new DataFrame. It was observed that names for provinceâ€™s were not given but decided to leave it in the DataFrame as a point of reference. In addition the data revealed that vaccines were distributed to provinces way before actual vaccinations started and so I dropped all zero entries on relevant columns in order to get the starting date for all vaccinations. As a final outlook a dropna function was applied on the total vaccinations column to be sure we have none value entries in the final dataset.
 
 ### Italy data transformation
 
